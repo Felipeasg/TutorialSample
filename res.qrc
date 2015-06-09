@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>Bottle.png</file>
+        <file>SampleImportExport.png</file>
+    </qresource>
+</RCC>
