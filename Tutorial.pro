@@ -45,6 +45,11 @@ HEADERS += \
 
 INCLUDEPATH += /usr/include/oce
 
+TRANSLATIONS = Common-icon.ts  \
+                Common-string.ts  \
+                Tutorial-icon.ts  \
+                Tutorial-string.ts
+
 
 #unix: LIBS += -L/usr/local/lib -lTKernel -lTKMath -lTKBRep -lTKTopAlgo -lTKPrim -lTKBO -lTKOffset -lTKService -lTKV3d -lTKOpenGl -lTKFillet -lX11
 
@@ -53,7 +58,8 @@ LIBS += -L/usr/lib64/oce -lTKernel -lPTKernel -lTKMath -lTKService -lTKV3d -lTKO
         -lTKSTEPBase -lTKShapeSchema -lTKGeomBase -lTKGeomAlgo -lTKG3d -lTKG2d \
         -lTKXSBase -lTKPShape -lTKShHealing -lTKHLR -lTKTopAlgo -lTKMesh -lTKPrim \
         -lTKCDF -lTKBool -lTKBO -lTKFillet -lTKOffset \
-        -lfreeimage -lX11
+	-lX11
+        #-lfreeimage 
 
 RESOURCES += \
     res.qrc

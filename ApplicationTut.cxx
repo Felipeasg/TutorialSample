@@ -59,7 +59,7 @@ void ApplicationTut::onMakeBottleAction()
 
 QString ApplicationTut::getTutResourceDir()
 {
-  static QString resDir (qgetenv ("CSF_TutorialResourcesDefaults").constData());
+  static QString resDir = ":/res";//(qgetenv (":/res/res").constData());
   return resDir;
 }
 

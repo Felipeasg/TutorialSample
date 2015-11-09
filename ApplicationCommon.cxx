@@ -18,6 +18,8 @@
 
 #include <stdlib.h>
 
+#include <QDebug>
+
 static ApplicationCommonWindow* stApp = 0;
 static QMdiArea* stWs = 0;
 
@@ -165,6 +167,8 @@ void ApplicationCommonWindow::createCasCadeOperations()
 
   QString dir = ApplicationCommonWindow::getResourceDir() + QString( "/" );
   QAction* a;
+
+  qDebug() << dir+QObject::tr("ICON_TOOL_WIRE");
 
   a = new QAction( QPixmap( dir+QObject::tr("ICON_TOOL_WIRE") ), QObject::tr("MNU_TOOL_WIRE"), this );
   a->setToolTip( QObject::tr("TBR_TOOL_WIRE") );
@@ -578,8 +582,8 @@ void ApplicationCommonWindow::onSetMaterial( int theMaterial )
 
 QString ApplicationCommonWindow::getResourceDir()
 {
-  static QString aResourceDir =
-    QString::fromUtf8 (qgetenv ("CSF_ResourcesDefaults").constData());
+  static QString aResourceDir = ":/res";
+    //QString::fromUtf8 (qgetenv (":/res/res").constData());
   
   return aResourceDir;
 }
