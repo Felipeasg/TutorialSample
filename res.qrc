@@ -4,6 +4,8 @@
         <file>res/Bottle.png</file>
         <file>res/cascade.png</file>
         <file>res/close.png</file>
+        <file>res/Common-icon.qm</file>
+        <file>res/Common-string.qm</file>
         <file>res/cursor_rotate.png</file>
         <file>res/cursor_zoom.png</file>
         <file>res/document.png</file>
@@ -22,6 +24,8 @@
         <file>res/tool_transparency.png</file>
         <file>res/tool_wireframe.png</file>
         <file>res/tool-shading.png</file>
+        <file>res/Tutorial-icon.qm</file>
+        <file>res/Tutorial-string.qm</file>
         <file>res/view_axo.png</file>
         <file>res/view_back.png</file>
         <file>res/view_bottom.png</file>
@@ -38,9 +42,5 @@
         <file>res/view_rotate.png</file>
         <file>res/view_top.png</file>
         <file>res/view_zoom.png</file>
-        <file>res/Common-string.qm</file>
-        <file>res/Common-icon.qm</file>
-        <file>res/Tutorial-icon.qm</file>
-        <file>res/Tutorial-string.qm</file>
     </qresource>
 </RCC>
